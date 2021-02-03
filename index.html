@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3d tic tac toe.</title>
     <style type="text/css">
       body { 
@@ -16,7 +16,7 @@
          display: flex;
          justify-content: center;
          align-items: center;
-         margin: 0 auto;
+         margin: auto;
          height: 100vh;
         }
     </style>
@@ -33,7 +33,7 @@
         var uCount = 18;
         var vCount = 5;
         var uWrap = true;
-        var vWrap = false;
+        var vWrap = true;
         var uMouseSensitivity = -0.05;
         var vMouseSensitivity = 0.0625;
         var uStartIndex = 9;
@@ -41,13 +41,13 @@
         var minZoom = 1;
         var maxZoom = 1;
         var rotationDamping = 0.96;
-        var downScaleToBrowser = true;
+        var downScaleToBrowser = false;
         var addDownScaleGUIButton = false;
         var downloadOnInteraction = false;
         var imageExtension = "jpg";
         var showLoading = true;
         var loadingIcon = "ks_logo.png"; // Set to empty string for default icon.
-        var allowFullscreen = true; // Double-click in desktop browsers for fullscreen.
+        var allowFullscreen = false; // Double-click in desktop browsers for fullscreen.
         var uReverse = false;
         var vReverse = false;
         var hotspots = {};
